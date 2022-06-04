@@ -1,2 +1,3 @@
 aws_access_key = "自身のアカウントのアクセスキー"
 aws_secret_key = "自身のアカウントのシークレットキー"
+aws_region = "作業対象のリージョン"
