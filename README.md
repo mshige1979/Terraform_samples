@@ -48,7 +48,8 @@ terraform destroy
 
 ## demo リスト
 
-| No  | 説明             | 　 URL                                                                                   |
-| --- | ---------------- | ---------------------------------------------------------------------------------------- |
-| 1   | VPC のみ         | [01_demo](https://github.com/mshige1979/Terraform_samples/tree/main/AWS/01_demo)         |
-| 2   | ネットワーク関連 | [02_networks](https://github.com/mshige1979/Terraform_samples/tree/main/AWS/02_networks) |
+| No  | 説明              | 　 URL                                                                                     |
+| --- | ----------------- | ------------------------------------------------------------------------------------------ |
+| 1   | VPC のみ          | [01_demo](https://github.com/mshige1979/Terraform_samples/tree/main/AWS/01_demo)           |
+| 2   | ネットワーク関連  | [02_networks](https://github.com/mshige1979/Terraform_samples/tree/main/AWS/02_networks)   |
+| 3   | EC2 に Web サーバ | [03_ec2(web)](<https://github.com/mshige1979/Terraform_samples/tree/main/AWS/03_ec2(web)>) |
