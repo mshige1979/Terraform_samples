@@ -9,6 +9,15 @@ resource "aws_security_group" "ssh_sg" {
   # 紐付けVPC
   vpc_id = aws_vpc.vpc.id
 
+  # アウトバウンドはここに記載
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
   # タグ
   tags = {
     Name = "${var.prefix}-ssh-sg"
@@ -36,6 +45,15 @@ resource "aws_security_group" "httpd_sg" {
   description = "${var.prefix}-http-sg"
   # 紐付けVPC
   vpc_id = aws_vpc.vpc.id
+
+  # アウトバウンドはここに記載
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
 
   # タグ
   tags = {
