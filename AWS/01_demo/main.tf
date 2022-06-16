@@ -8,6 +8,13 @@ terraform {
   }
 
   required_version = ">= 0.14.9"
+  # stateをS3で管理
+  backend "s3" {
+    bucket = "mshige1979-terraform"
+    region = "ap-northeast-1"
+    key = "01/terraform.tfstate"
+    encrypt = true
+  }
 }
 
 # AWS
